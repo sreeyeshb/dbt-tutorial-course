@@ -1,0 +1,23 @@
+lessons:
+  outputs:
+    dev:
+      dataset: dbt_exa
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: vigilant-quanta-414114
+      threads: 60
+      type: bigquery
+    production:
+      dataset: dbt_production
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: vigilant-quanta-414114
+      threads: 60
+      type: bigquery
+  target: dev
